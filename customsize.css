@@ -1,0 +1,35 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Renkler */
+:root {
+  --primary: #1a202c;
+  --secondary: #cbd5e0;
+  --accent: #e53e3e;
+  --text: #fff;
+}
+
+/* Tema */
+body {
+  background-color: var(--primary);
+  color: var(--text);
+  font-family: sans-serif;
+}
+
+/* Buton */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  color: var(--text);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>İzin Talebi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-6">İzin Talebi</h1>
+
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <h2 class="text-xl font-bold mb-4">İznin Talebi</h2>
+
+                <form id="requestForm">
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2" for="days">Günlerin Sayısı</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="days" type="number" placeholder="Number of days" required>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                            İsteği Gönder
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-4">Tatil Onaylama</h2>
+
+                <form id="approveForm">
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2" for="employee">Personel Adresi</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="employee" type="text" placeholder="0x0000000000000000000000000000000000000000" required>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                            İsteği Onayla
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <h2 class="text-xl font-bold mb-4 mt-8">Tatil Talebiniz</h2>
+
+        <p id="vacationDays" class="text-lg"></p>
+
+        <h2 class="text-xl font-bold mb-4 mt-8">Beyaz Liste</h2>
+
+        <form id="whitelistForm">
+            <div class="mb-4">
+                <label class="block font-bold mb-2" for="whitelist">Adresini Beyaz Listeye Ekle</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="whitelist" type="text" placeholder="0x0000000000000000000000000000000000000000" required>
+            </div>
+
+            <div class="flex justify-end">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Beyaz Listeye Ekle
+                </button>
+            </div>
+        </form>
+    </div>
+
+
